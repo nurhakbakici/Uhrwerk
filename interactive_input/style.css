@@ -23,4 +23,6 @@ button {
   width: 80px;
   padding: 0.1rem 1rem;
   margin-top: 0.1rem;
+  border: 1px solid #124454;
+  box-shadow: 5px 5px #574d4df6;
 }

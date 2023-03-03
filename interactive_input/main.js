@@ -37,6 +37,11 @@
 // })
 
 
+function deleteRow(e) {
+    const btn = e.target;
+    btn.closest("tr").remove();
+}
+
 function addData(){
 
     const name_input = document.querySelector("#name-input").value
@@ -57,15 +62,30 @@ function addData(){
     const input_td_job = document.createElement('td')
     input_td_job.innerText = job_input
 
+    const delete_td_row = document.createElement("td")
+
+    const row_delete_el = document.createElement('button')
+    row_delete_el.classList.add('delete')
+	row_delete_el.innerText = 'Delete'
+    
+    // basılınca fonksiyonu çalıştıracak
+    row_delete_el.addEventListener("click", deleteRow);
+    
+    delete_td_row.appendChild(row_delete_el)
+
+    
+
     table_el.appendChild(input_td_name)
     table_el.appendChild(input_td_age)
     table_el.appendChild(input_td_job)
+    table_el.appendChild(delete_td_row)
     table_el.style.backgroundColor = color_input
 
     main_table_el.appendChild(table_el)
+
+    
+
 }
-
-
 
 
 
