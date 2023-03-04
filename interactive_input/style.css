@@ -6,7 +6,7 @@
 }
 
 header {
-  background-color: #124454;
+  background: linear-gradient(to right, #124454, #011a2b);
 }
 
 #new-table-submit {
@@ -21,8 +21,33 @@ header {
 
 button {
   width: 80px;
-  padding: 0.1rem 1rem;
+  padding: 0.25rem 1rem;
   margin-top: 0.1rem;
   border: 1px solid #124454;
   box-shadow: 5px 5px #574d4df6;
+}
+
+input {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 5px 18px;
+  box-shadow: 5px 5px #574d4df6;
+}
+
+.delete:active,
+.add-button:active,
+input:active {
+  transition: 0.3s;
+  scale: 1.2;
+}
+
+.delete {
+  border-radius: 0.5rem;
+  background-color: #f5f5f5;
+}
+
+.add-button {
+  border-radius: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
 }
