@@ -5,18 +5,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+body {
   background: linear-gradient(to right, #124454, #011a2b);
-}
-
-#new-table-submit {
-  color: #fff;
-  background-color: #d03a3a;
-  border: none;
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 0 1rem;
-  margin-left: 5rem;
 }
 
 button {
@@ -34,11 +24,11 @@ input {
   box-shadow: 5px 5px #574d4df6;
 }
 
-.delete:active,
-.add-button:active,
-input:active {
+.delete:hover,
+.add-button:hover,
+input:hover {
+  transform: scale(1.1);
   transition: 0.3s ease-in-out;
-  scale: 1.2;
 }
 
 .delete {
@@ -50,4 +40,12 @@ input:active {
   border-radius: 0.5rem;
   font-weight: 700;
   letter-spacing: 1.2px;
+}
+
+th {
+  color: #fff;
+}
+
+td {
+  color: #fff;
 }

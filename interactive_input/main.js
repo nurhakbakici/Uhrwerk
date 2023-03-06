@@ -1,4 +1,6 @@
 
+
+
 function deleteRow(e) {
     const btn = e.target;
     btn.closest("tr").remove();
@@ -46,7 +48,4 @@ function addData(){
     main_table_el.appendChild(table_el)
 
 }
-
-
-
 
